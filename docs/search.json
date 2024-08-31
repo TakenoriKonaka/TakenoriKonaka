@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Takenori KONAKA’ Website",
     "section": "",
-    "text": "Thanks for checking out my web site!"
+    "text": "胡中孟徳（こなかたけのり）のホームページです。 東京大学社会科学研究所附属社会調査・データアーカイブ研究センターに所属しています。\nThanks for checking out my web site!"
   },
   {
     "objectID": "projects.html#project-2",
@@ -19,5 +19,26 @@
     "title": "Projects",
     "section": "Project 3",
     "text": "Project 3"
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Takenori KONAKA’ Website",
+    "section": "Goals",
+    "text": "Goals"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Takenori KONAKA’ Website",
+    "section": "Education",
+    "text": "Education"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Takenori KONAKA’ Website",
+    "section": "Experience",
+    "text": "Experience"
   }
 ]

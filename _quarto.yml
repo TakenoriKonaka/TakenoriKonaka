@@ -5,6 +5,7 @@ project:
 website:
   title: "Takenori Konaka's Page"
   navbar:
+    background: orange
     left:
       - href: index.qmd
         text: Home
@@ -15,12 +16,11 @@ website:
       - icon: github
         href: https://github.com/TakenoriKonaka
   page-footer:
-    right: "Built with [Quarto](https://quarto.org/)"
     left: "&copy; Copyright 2024, Takenori Konaka"
 
 format:
   html:
-    theme: cerulean
+    theme: simplex
     toc: true
 
 editor: source

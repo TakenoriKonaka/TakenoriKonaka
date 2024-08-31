@@ -1,19 +1,12 @@
 ---
-title: "About Me"
+title: "Takenori KONAKA' Website"
 about:
   id: me
   template: broadside
-  image: img/profile.png
+  # image: img/profile.png
 ---
 
-:::{#me}
-
-## Goals
-
-## Education
-
-## Experience
-
-:::
+胡中孟徳（こなかたけのり）のホームページです。
+東京大学社会科学研究所附属社会調査・データアーカイブ研究センターに所属しています。
 
 Thanks for checking out my web site!
