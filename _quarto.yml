@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    - "docs"
+  render:
+    - "*.qmd"
+    - "!docs/"  # docsフォルダの中身は無視してね、という指示
   
 website:
   title: "Takenori Konaka's Page"
