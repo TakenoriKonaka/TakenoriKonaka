@@ -2,11 +2,11 @@
 title: "Takenori KONAKA' Website"
 about:
   id: me
-  template: broadside
+  template: marquee
   # image: img/profile.png
 ---
 
 胡中孟徳（こなかたけのり）のホームページです。
 東京大学社会科学研究所附属社会調査・データアーカイブ研究センターに所属しています。
 
-Thanks for checking out my web site!
+現在内容作成中です。テストテスト
