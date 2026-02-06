@@ -13,7 +13,7 @@ website:
       - href: notes.qmd
       - href: projects.qmd
     tools:
-      - icon: x
+      - icon: twitter-x
         href: https://x.com/KonakaTakenori
       - icon: github
         href: https://github.com/TakenoriKonaka
