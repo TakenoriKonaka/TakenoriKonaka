@@ -1,0 +1,29 @@
+---
+title: "RStudioとGitを連携する方法（自分用メモ）"
+author: "Konaka Takenori"
+date: "2024-05-17"
+categories: [blog, memo]
+page-layout: article
+---
+
+こちらの記事<https://ecological-stats.netlify.app/2023/01/15/r-project/>を参考にしながら、自分用にアレンジしました。
+
+## GithubとGitを用意する
+
+1.  Githubでアカウントを作成する
+
+2.  Github Desktopをインストールする
+
+## Gitと連携したRプロジェクトをつくる
+
+1.  新しくプロジェクトを立ち上げるタイミングで、忘れずにGitに連携する。
+
+    `File > New Project > New Directory > New Project` で、プロジェクトをつくる際に`Create a git repository` にチェックを入れる。
+
+2.  Github DesktopでR プロジェクトのフォルダを選択する。
+
+## 編集したあとコミット・プッシュする
+
+1.  編集した内容を記録するには、「コミット」が必要である。
+
+2.  Githubに反映するには「プッシュ」が必要である。

@@ -1,0 +1,9 @@
+---
+title: "ぺアレントクラシーを読んで2"
+author: "Konaka Takenori"
+date: "2024-05-04"
+categories: [blog, cat]
+page-layout: article
+---
+
+これは2024年5月4日のテスト記事2です。

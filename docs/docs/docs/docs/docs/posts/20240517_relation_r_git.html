@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Konaka Takenori">
+<meta name="dcterms.date" content="2024-05-17">
 
-<title>Takenori Konaka’s Page - Takenori KONAKA’ Website</title>
+<title>Takenori Konaka’s Page - RStudioとGitを連携する方法（自分用メモ）</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<script src="../../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,14 +65,14 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../../../index.html">
     <span class="navbar-title">Takenori Konaka’s Page</span>
     </a>
   </div>
@@ -80,19 +83,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../../../../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html" rel="" target="">
+    <a class="nav-link" href="../../../../../cv.html" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html" rel="" target="">
+    <a class="nav-link" href="../../../../../notes.html" rel="" target="">
  <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html" rel="" target="">
+    <a class="nav-link" href="../../../../../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -107,27 +110,80 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#githubとgitを用意する" id="toc-githubとgitを用意する" class="nav-link active" data-scroll-target="#githubとgitを用意する">GithubとGitを用意する</a></li>
+  <li><a href="#gitと連携したrプロジェクトをつくる" id="toc-gitと連携したrプロジェクトをつくる" class="nav-link" data-scroll-target="#gitと連携したrプロジェクトをつくる">Gitと連携したRプロジェクトをつくる</a></li>
+  <li><a href="#編集したあとコミットプッシュする" id="toc-編集したあとコミットプッシュする" class="nav-link" data-scroll-target="#編集したあとコミットプッシュする">編集したあとコミット・プッシュする</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-marquee">
-  <div class="about-image-container">
-  </div>
-  <div class="about-contents">
-    <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Takenori KONAKA’ Website</h1>
-</div>
+<h1 class="title">RStudioとGitを連携する方法（自分用メモ）</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">blog</div>
+    <div class="quarto-category">memo</div>
+  </div>
+  </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Konaka Takenori </p>
+          </div>
   </div>
-</header> <main class="content" id="quarto-document-content">
-<p>胡中孟徳（こなかたけのり）のホームページです。 東京大学社会科学研究所附属社会調査・データアーカイブ研究センターに所属しています。</p>
-<p>現在内容作成中です。</p>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 17, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>こちらの記事<a href="https://ecological-stats.netlify.app/2023/01/15/r-project/" class="uri">https://ecological-stats.netlify.app/2023/01/15/r-project/</a>を参考にしながら、自分用にアレンジしました。</p>
+<section id="githubとgitを用意する" class="level2">
+<h2 class="anchored" data-anchor-id="githubとgitを用意する">GithubとGitを用意する</h2>
+<ol type="1">
+<li><p>Githubでアカウントを作成する</p></li>
+<li><p>Github Desktopをインストールする</p></li>
+</ol>
+</section>
+<section id="gitと連携したrプロジェクトをつくる" class="level2">
+<h2 class="anchored" data-anchor-id="gitと連携したrプロジェクトをつくる">Gitと連携したRプロジェクトをつくる</h2>
+<ol type="1">
+<li><p>新しくプロジェクトを立ち上げるタイミングで、忘れずにGitに連携する。</p>
+<p><code>File &gt; New Project &gt; New Directory &gt; New Project</code> で、プロジェクトをつくる際に<code>Create a git repository</code> にチェックを入れる。</p></li>
+<li><p>Github DesktopでR プロジェクトのフォルダを選択する。</p></li>
+</ol>
+</section>
+<section id="編集したあとコミットプッシュする" class="level2">
+<h2 class="anchored" data-anchor-id="編集したあとコミットプッシュする">編集したあとコミット・プッシュする</h2>
+<ol type="1">
+<li><p>編集した内容を記録するには、「コミット」が必要である。</p></li>
+<li><p>Githubに反映するには「プッシュ」が必要である。</p></li>
+</ol>
 
 
-</main> 
-  </div>
-</div>
- <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -148,6 +204,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

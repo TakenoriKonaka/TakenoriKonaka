@@ -1,0 +1,13 @@
+---
+title: "Notes"
+listing:
+  contents: 
+  - "posts/*.qmd"
+sort: "date desc"
+categories: true
+sort-ui: true
+filter-ui: true
+page-size: 10
+---
+  
+ノートなどをまとめています。
