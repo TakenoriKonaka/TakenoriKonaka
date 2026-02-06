@@ -15,8 +15,11 @@ website:
       - href: index.qmd
         text: Home
       - href: cv.qmd
+        text: CV
       - href: notes.qmd
+        text: Notes
       - href: projects.qmd
+        text: Projects
     tools:
       - icon: twitter-x
         href: https://x.com/KonakaTakenori
