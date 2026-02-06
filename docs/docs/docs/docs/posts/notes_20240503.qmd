@@ -1,9 +1,0 @@
----
-title: "ぺアレントクラシーを読んで"
-author: "Konaka Takenori"
-date: "2024-05-03"
-categories: [blog, dog]
-page-layout: article
----
-
-これは2024年5月4日のテスト記事です。
